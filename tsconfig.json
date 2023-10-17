@@ -1,0 +1,7 @@
+{
+  "extends": "@pinkchampagne/tsconfig",
+  "compilerOptions": {
+    "types": ["vitest/importMeta"]
+  },
+  "include": ["src"]
+}

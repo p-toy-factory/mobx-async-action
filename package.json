@@ -1,0 +1,38 @@
+{
+  "name": "mobx-async-action",
+  "type": "module",
+  "version": "0.1.0",
+  "packageManager": "pnpm@8.13.1",
+  "description": "MobX asynchronous action",
+  "author": "pinkchampagne",
+  "license": "MIT",
+  "keywords": [
+    "mobx"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --clean --dts --format=esm,cjs",
+    "format": "biome format .",
+    "format:fix": "pnpm run format --write",
+    "lint": "env ESLINT_USE_FLAT_CONFIG=true eslint . --cache",
+    "lint:fix": "pnpm run lint --fix",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "mobx": "^6.10.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@pinkchampagne/tsconfig": "^1.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-pcp": "2.0.0-beta.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
