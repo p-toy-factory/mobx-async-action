@@ -4,6 +4,12 @@
 
 The reactions won't be triggered until the promise's state changes to be fulfilled or rejected.
 
+## Install
+
+```
+npm install mobx-async-action
+```
+
 ## Example
 
 ```typescript
