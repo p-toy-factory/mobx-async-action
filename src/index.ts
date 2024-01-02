@@ -7,7 +7,6 @@ function baseAsyncAction<T>(
 	fn: () => Promise<T>,
 ): Promise<T> {
 	const info = _startAction(actionName, false, undefined);
-	// The reactions will be triggered during the execution of function `_endAction`.
 	return fn().finally(() => _endAction(info));
 }
 
