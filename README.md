@@ -16,7 +16,7 @@ npm install mobx-async-action
 import { observable, reaction } from "mobx";
 import { expect, test } from "vitest";
 
-import { runInAsyncAction } from ".";
+import { runInAsyncAction } from "mobx-async-action";
 
 function wait(ms: number) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
